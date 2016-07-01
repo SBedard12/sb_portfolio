@@ -1,0 +1,150 @@
+// Importation des mixine
+@import "../bower_components/normalize-scss/normalize";
+@import "mixin";
+
+// Variables
+$noir: #000000;
+$blanc: #ffffff;
+$grisPale: #f7f7f7;
+$grisFoncee: #3e3e3e;
+$background: #f7f7f7;
+$erreur: #C71F22;
+$vert : #8ec714;
+// Importation de la fontface
+@font-face {
+    font-family: maFont;
+    src: url(../medias/font/basictitlefont.ttf);
+}
+
+// Style Généraux
+html{
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+  font-size: 16px;
+}
+body{
+  font-family: maFont;
+}
+
+.container{
+  background-color: $background;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 30px $blanc;
+  @include box-sizing(border-box);
+}
+
+// Logo du site en haut a gauche
+nav{
+  @extend %clearfix
+}
+.topLeftLogo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 40px;
+  @include transform(rotate(90deg))
+}
+// Ham menu principale
+.navMainBtn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  .ligneBtn{
+    height: 1px;
+    width: 100%;
+    background-color: $noir;
+    margin: 8px 0;
+  }
+}
+
+// Nom sur la gauche
+.sideInformations{
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  @include transform(translateY(-50%));
+  h1{
+    display: -webkit-inline-box;
+    @include transform(rotate(90deg));
+    &:after{
+      content: '';
+      display: block;
+      position: relative;
+      background-color: $noir;
+      width: 1px;
+      right: -5px;
+      height: 13px;
+    }
+  }
+}
+
+// Css pour l'accueil
+// Design scope middle page
+.ScopeDesign{
+  -webkit-box-shadow: -2px -1px 14px 0px rgba(50, 50, 50, 0.09);
+  -moz-box-shadow:    -2px -1px 14px 0px rgba(50, 50, 50, 0.09);
+  box-shadow:         -2px -1px 14px 0px rgba(50, 50, 50, 0.09);
+  display: block;
+  margin: auto;
+  width: 630px;
+  height: 630px;
+  border-radius: 50%;
+  background-image: url("../medias/images/scopeAccueil.jpg");
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  &:hover{
+    .middleScopeDesign{
+      svg{
+        transform: rotate(90deg);
+        transition: all 10s linear;
+      }
+    }
+  }
+}
+.centerScopeDesign{
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: solid 1px $noir;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.middleScopeDesign{
+  svg{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(0deg);
+    transition: all 1s linear;
+  }
+}
+.centerLogo{
+  img{
+    width: 180px;
+    @include transform(rotate(90deg));
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+}
