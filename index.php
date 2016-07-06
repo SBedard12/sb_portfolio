@@ -5,9 +5,12 @@
 ?>
 <html>
 
+
   <?php  include ''.$strchemin.'inc/pieces/meta.php';?>
   <body class="container">
+    <?php  //include ''.$strchemin.'inc/pieces/preLoader.php';?>
     <header>
+
       <?php  include ''.$strchemin.'inc/pieces/navigation.php';?>
     </header>
     <main>
@@ -15,9 +18,9 @@
       <div class=ScopeDesign>
 
         <div class="centerScopeDesign">
-          <div class="blackIcone menuCompetences"><i class="sb-competences"></i></div>
-          <div class="blackIcone menuProjets"><i class="sb-projets"></i></div>
-          <div class="blackIcone menuPropos"><i class="sb-profile"></i></div>
+          <div class="blackIcone menuCompetences pageChange" data-page="competences" ><i class="sb-competences"></i></div>
+          <div class="blackIcone menuProjets pageChange" data-page="projets"><i class="sb-projets"></i></div>
+          <div class="blackIcone menuPropos pageChange" data-page="propos"><i class="sb-profile"></i></div>
 
           <div class="middleScopeDesign">
             <svg height="490" width="490">
@@ -31,7 +34,8 @@
       </div>
     </main>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <?php  include ''.$strchemin.'inc/pieces/scriptFooter.php';?>
   <script src="inc/js/accueil.js"></script>
   <script src="inc/js/preLoader.js"></script>
 
