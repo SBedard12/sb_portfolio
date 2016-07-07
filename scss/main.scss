@@ -128,6 +128,12 @@ nav{
   width: 40px;
   @include transform(rotate(90deg));
   z-index: 10;
+  cursor: pointer;
+}
+h3{
+  position: absolute;
+  top: 45px;
+  left: 75px;
 }
 // Ham menu principale
 .navMainBtn{
@@ -213,12 +219,21 @@ nav{
     border-radius: 50%;
     position: absolute;
     cursor: pointer;
+
     i{
+      transition: all 0.3s ease-in-out;
       color: $blanc;
-      font-size: 30px;
+      font-size: 23px;
       position: relative;
-      left: 7px;
-      top: 7px;
+      left: 11px;
+      top: 10px;
+    }
+    &:hover{
+      // background-color: $blanc;
+      i{
+        color: $vert;
+      }
+
     }
   }
   .menuCompetences{
@@ -235,6 +250,19 @@ nav{
     @include transform(translateY(-50%));
     top: 50%;
     left: -22.5px;
+  }
+  .facebook{
+    @include transform(translateX(-50%));
+    left: 50%;
+    bottom: -22.5px;
+  }
+  .linkedin{
+    left: 33%;
+    bottom: -12.5px;
+  }
+  .twitter{
+    left: 59%;
+    bottom: -12.5px;
   }
 }
 

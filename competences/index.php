@@ -7,6 +7,7 @@
 <body class="container competences">
   <header>
     <?php  include ''.$strchemin.'inc/pieces/navigation.php';?>
+    <h3> competences </h3>
     <i class="sb-competences"></i>
   </header>
   <main>
@@ -34,9 +35,9 @@
 
     </div>
 
-    <div class="listePratique">
-      Bacon ipsum dolor amet rump pastrami sirloin ball tip turducken. Beef turducken spare ribs, drumstick chuck meatloaf prosciutto. Tail meatball pancetta ball tip bacon. Pork loin kevin hamburger turkey shoulder andouille sausage meatloaf jowl pastrami kielbasa. Ham tongue
-    </div>
+    <p class="listePratique">
+      Photoshop / illustrator / indesign / experience design / axure /  UX /  Suite adobe,
+    </p>
 
   </main>
 </body>
