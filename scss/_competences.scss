@@ -16,12 +16,7 @@
   0%   { left: 0%; }
   100% { left: 100%; }
   }
-  i{
-    font-size: 35px;
-    position: absolute;
-    top: 55px;
-    left: 25px;
-  }
+
   .competencesNavigation{
     ul{
       position: absolute;
@@ -150,7 +145,6 @@
     left: 50%;
     @include transform(translateX(-50%));
     font-size: 25px;
-
   }
 
 }

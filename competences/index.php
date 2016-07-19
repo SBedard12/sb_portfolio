@@ -8,7 +8,7 @@
   <header>
     <?php  include ''.$strchemin.'inc/pieces/navigation.php';?>
     <h3> competences </h3>
-    <i class="sb-competences"></i>
+    <i class="sb-competences topleft"></i>
   </header>
   <main>
     <?php  include ''.$strchemin.'inc/pieces/sideInformations.php';?>

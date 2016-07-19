@@ -23,8 +23,6 @@ jQuery(document).ready(function ($) {
     numTranY = ((positionSourieY * 20 ) / container_w);
 
     $scope.css({transform: 'rotateX('+numdegY+'deg)'+'rotateY('+numdegX+'deg)'+'translateX(-'+numTranX+'px)'+'translateY(-'+numTranY+'px)'});
-    $scope.css('background-position-x', ''+numTranX+'%');
-    $scope.css('background-position-y', ''+numTranY+'%');
   });
 
 

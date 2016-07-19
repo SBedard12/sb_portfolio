@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'sbPortfolio';
-    src:    url('fonts/sbPortfolio.eot?cytlir');
-    src:    url('fonts/sbPortfolio.eot?cytlir#iefix') format('embedded-opentype'),
-        url('fonts/sbPortfolio.ttf?cytlir') format('truetype'),
-        url('fonts/sbPortfolio.woff?cytlir') format('woff'),
-        url('fonts/sbPortfolio.svg?cytlir#sbPortfolio') format('svg');
+    src:    url('fonts/sbPortfolio.eot?bmjc2b');
+    src:    url('fonts/sbPortfolio.eot?bmjc2b#iefix') format('embedded-opentype'),
+        url('fonts/sbPortfolio.ttf?bmjc2b') format('truetype'),
+        url('fonts/sbPortfolio.woff?bmjc2b') format('woff'),
+        url('fonts/sbPortfolio.svg?bmjc2b#sbPortfolio') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.sb-interets:before {
+    content: "\e90e";
+}
 .sb-twitter:before {
     content: "\e900";
 }
@@ -65,5 +68,11 @@
 }
 .sb-linkedin:before {
     content: "\e90d";
+}
+.sb-pdf:before {
+    content: "\e90f";
+}
+.sb-contact:before {
+    content: "\e910";
 }
 

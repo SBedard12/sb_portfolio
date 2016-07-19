@@ -1,0 +1,36 @@
+.projets{
+  // @media only screen and (max-width : 1215px) {
+     position: relative;
+    overflow-y: scroll;
+  // }
+  .lesProjets{
+    text-align: center;
+    margin-top: 50px;
+    .unProjet{
+      display: inline-block;
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      margin: 20px;
+      position: relative;
+      .titreProjets{
+        margin: 10px;
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      .dottedCircle{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+        background-color: $vert;
+        svg{
+          position: absolute;
+          left: 50%;
+          top: 5px;
+          @include transform(translateX(-50%));
+        }
+      }
+    }
+  }
+}

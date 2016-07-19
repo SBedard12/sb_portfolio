@@ -1,0 +1,170 @@
+.propos{
+  .mousemove{
+    // transition: all 0.5s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  h2{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+  }
+  ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 30px;
+  }
+  .clickBlackIcone{
+      width: 0px;
+      height: 0px;
+      background-color: $blanc;
+      border-radius: 50%;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+      transition: all 0.3s ease-in-out;
+      .close{
+        opacity: 0;
+        margin-top: 20px;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+         @include transform(translateX(-50%));
+        &:before{
+          content: '';
+          width: 0px;
+          height: 1px;
+          background-color: $noir;
+          display: block;
+          top: 5px;
+          left: -10px;
+          position: absolute;
+          transition: all 0.3s ease-in-out ;
+        }
+        &:hover{
+          &:before{
+              width: 50px;
+          }
+        }
+      }
+      &.active{
+        width: 420px;
+        height: 420px;
+        .close{
+          opacity: 1;
+        }
+      }
+      .content{
+        opacity: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        h4{
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        p{
+          line-height: 30px;
+        }
+        &.open{
+          transform: translateX(-50%) translateY(-50%) ;
+          animation: opacityContent 0.8s ;
+          animation-fill-mode: forwards;
+        }
+        @keyframes  opacityContent{
+          0% {opacity: 0}
+          50% { opacity: 0}
+          100% {opacity: 1; top: 50%;}
+        }
+      }
+  }
+  .centerScopeDesign{
+    border: none;
+    svg{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .blackIcone{
+      &.interest{
+        top: 7px;
+        left: 50%;
+        @include transform(translateX(-50%));
+      }
+      &.contact{
+        top: 50%;
+        right: 7px;
+        @include transform(translatey(-50%));
+      }
+      &.pdf{
+        top: 50%;
+        left: 7px;
+        @include transform(translatey(-50%));
+      }
+      &.facebook{
+        bottom: 7px;
+      }
+      &.twitter{
+        bottom: 20px;
+      }
+      &.linkedin{
+        bottom: 20px;
+      }
+    }
+
+  }
+  .middleScopeDesign{
+    background-image: url("../medias/images/propos_01.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .pdfdwl{
+    position: absolute;
+    left: 50%;
+    @include transform(translateX(-50%));
+    height: 40px;
+    width: 275px;
+    background-color: $vert;
+    border-radius: 5px;
+    border: none;
+    color: $blanc;
+    padding: 30px;
+    line-height: 4px;
+  }
+  .meContacter{
+    position: absolute;
+    right: -246px;
+    top: 50%;
+    @include transform(translateY(-50%));
+    li{
+      margin: 15px;
+      margin-left: 0;
+    }
+  }
+}
